@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express();
+const port = 8000;
 
 // app.get(route, callback)
 
@@ -20,6 +21,6 @@ app.get("/temp", (req, res) => {
 })
 
 
-app.listen(8000, () => {
+app.listen(port, () => {
     console.log("listening on 8000 port")
 })
